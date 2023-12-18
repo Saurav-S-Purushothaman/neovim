@@ -49,11 +49,37 @@ return require('packer').startup(function(use)
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
   }
---   use {
---       'nvim-tree/nvim-tree.lua',
---       requires = {
---           'nvim-tree/nvim-web-devicons', -- optional
---       },
---   }
-
+  use {
+      'ayu-theme/ayu-vim'
+  }
+  use {
+      'ful1e5/onedark.nvim'
+  }
+  use {
+      "mcchrish/zenbones.nvim",
+      -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+      -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+      -- In Vim, compat mode is turned on as Lush only works in Neovim.
+      requires = "rktjmp/lush.nvim"
+  }
+  use {
+     'aktersnurra/no-clown-fiesta.nvim'
+  } 
+  use {
+      "jesseleite/nvim-noirbuddy",
+      requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+  }
+  use {'kdheepak/monochrome.nvim', config = function()
+      vim.cmd 'colorscheme monochrome'
+  end}
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use {"rebelot/kanagawa.nvim"}
+  use {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {},
+  }
+  use {'Olical/conjure'}
+  
  end)

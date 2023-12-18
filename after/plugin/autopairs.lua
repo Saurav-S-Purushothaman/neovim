@@ -1,5 +1,6 @@
 require('nvim-autopairs').setup({
     disable_filetype = { "TelescopePrompt" , "vim" },
+    enable_check_bracket_line = false
 })
 local disable_filetype = { "TelescopePrompt", "spectre_panel" }
 local disable_in_macro = true  -- disable when recording or executing a macro
@@ -8,7 +9,7 @@ local disable_in_replace_mode = true
 local ignored_next_char = [=[[%w%%%'%[%"%.%`%$]]=]
 local enable_moveright = true
 local enable_afterquote = true  -- add bracket pairs after quote
-local enable_check_bracket_line = true  --- check bracket in same line
+local enable_check_bracket_line = false  --- check bracket in same line
 local enable_bracket_in_quote = true --
 local enable_abbr = false -- trigger abbreviation
 local break_undo = true -- switch for basic rule break undo sequence
