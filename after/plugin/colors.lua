@@ -14,12 +14,12 @@
 --   },
 -- })
 
-require('noirbuddy').setup({
-  preset = 'crt-green',
-})
+-- require('noirbuddy').setup({
+--   preset = 'crt-green',
+-- })
 
 function ColorMyPencils(color) 
-	color = color or "tokyonight-night"
+	color = color or "zenbones"
 	vim.cmd.colorscheme(color)
     vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 end
