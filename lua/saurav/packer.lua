@@ -81,5 +81,6 @@ return require('packer').startup(function(use)
       opts = {},
   }
   use {'Olical/conjure'}
+  use { "ellisonleao/gruvbox.nvim" }
   
  end)
