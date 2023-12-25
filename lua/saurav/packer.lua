@@ -14,9 +14,9 @@ return require('packer').startup(function(use)
   use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
+	  -- config = function()
+	  --     vim.cmd('colorscheme rose-pine')
+	  -- end
   })
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/playground')
@@ -82,5 +82,7 @@ return require('packer').startup(function(use)
   }
   use {'Olical/conjure'}
   use { "ellisonleao/gruvbox.nvim" }
-  
+  use { "savq/melange-nvim" }
+  use {'patstockwell/vim-monokai-tasty'}
+  use { 'projekt0n/github-nvim-theme' }
  end)

@@ -19,9 +19,15 @@
 -- })
 
 function ColorMyPencils(color) 
-	color = color or "zenbones"
+	color = color or "default"
+	-- color = color or "github_dark_default"
 	vim.cmd.colorscheme(color)
-    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+    -- vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+    -- vim.cmd(set bg=dark)
 end
 
 ColorMyPencils()
+
+
+
+
