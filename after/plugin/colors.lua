@@ -14,15 +14,15 @@
 --   },
 -- })
 
--- require('noirbuddy').setup({
---   preset = 'crt-green',
--- })
+require('noirbuddy').setup({
+  preset = 'kiwi',
+})
 
 function ColorMyPencils(color) 
-	color = color or "monochrome"
+	--color = color or "no-clown-fiesta"
 	-- color = color or "github_dark_default"
 	vim.cmd.colorscheme(color)
-    -- vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
     -- vim.cmd(set bg=dark)
 end
 
