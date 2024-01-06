@@ -85,4 +85,5 @@ return require('packer').startup(function(use)
   use { "savq/melange-nvim" }
   use {'patstockwell/vim-monokai-tasty'}
   use { 'projekt0n/github-nvim-theme' }
+  use {'preservim/nerdtree'}
  end)
