@@ -13,13 +13,8 @@
 --     lsp = { underline = true }
 --   },
 -- })
-
--- require('noirbuddy').setup({
---   preset = 'crt-amber',
--- })
-
 function ColorMyPencils(color) 
-	color = color or "neobones"
+    color = color or "noirbuddy"
 	--color = color or "github_dark_default"
 	vim.cmd.colorscheme(color)
     vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
