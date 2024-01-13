@@ -14,10 +14,10 @@
 --   },
 -- })
 function ColorMyPencils(color) 
-    color = color or "noirbuddy"
+    color = color or "ayu"
 	--color = color or "github_dark_default"
 	vim.cmd.colorscheme(color)
-    vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+    -- vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
     -- vim.cmd(set bg=dark)
 end
 
